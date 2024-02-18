@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_BE = docker-symfony-be
+DOCKER_BE = docker-dinaspain-be
 UID = $(shell id -u)
 
 help: ## Show this help message
@@ -10,7 +10,7 @@ help: ## Show this help message
 	@egrep '^(.+)\:\ ##\ (.+)' ${MAKEFILE_LIST} | column -t -c 2 -s ':#'
 
 run: ## Start the containers
-	docker network create docker-symfony-network || true
+	docker network create docker-dinaspain-network || true
 	U_ID=${UID} docker-compose up -d
 
 stop: ## Stop the containers
