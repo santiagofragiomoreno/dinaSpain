@@ -1,0 +1,3 @@
+App\product\list\infrastructure\controllers\ProductsListerGetController:
+  resource: App\product\list\infrastructure\controllers\ProductsListerGetController
+  type: attribute
