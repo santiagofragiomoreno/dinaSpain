@@ -12,3 +12,8 @@
 /.idea/
 /.idea/php.xml
 
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
